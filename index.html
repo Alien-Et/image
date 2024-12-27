@@ -1,30 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>随机壁纸</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-</head>
-<body>
+<html lang='en'>
+<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>随机壁纸</title></head>
+<body style='margin: 0; height: 100vh; background-size: cover; background-position: center;'>
+<h1 style='color: white; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);'>
+随机壁纸展示</h1>
 <script>
-    const images = [
-        "https://Alien-Et.github.io/image/day.jpg",
-        "https://Alien-Et.github.io/image/night.jpg",
-    ];
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    document.body.style.backgroundImage = `url('${randomImage}')`;
+const images = https://raw.githubusercontent.com/Alien-Et/image/main/day.jpg https://raw.githubusercontent.com/Alien-Et/image/main/night.jpg;
+const randomIndex = Math.floor(Math.random() * images.length);
+document.body.style.backgroundImage = 'url(' + images[randomIndex] + ')';
 </script>
 </body>
 </html>
