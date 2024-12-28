@@ -43,7 +43,8 @@
             'https://raw.githubusercontent.com/Alien-Et/image/main/image/eaf1dfb68708b4a0a8ec7375d655c674.webp',
             'https://raw.githubusercontent.com/Alien-Et/image/main/image/66ef8edc70aae239283853e9e0cdc364.webp',
         ];
-        document.body.style.backgroundImage = `url('${images[Math.floor(Math.random() * images.length)]}')`;
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        document.body.style.backgroundImage = `url('${randomImage}')`;
     </script>
 </body>
 </html>
