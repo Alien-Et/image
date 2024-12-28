@@ -3,63 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>随机壁纸</title>
+    <title>壁纸展示</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            background: black;
-            background-size: cover;
-            background-position: center;
-            color: white;
             font-family: Arial, sans-serif;
-            font-size: 18px;
-            transition: background-image 1s ease-in-out;
         }
-        .info {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 5px;
+        img {
+            max-width: 90%;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="info">
-        正在随机展示壁纸，刷新页面查看更多。
-    </div>
-<script>
-    const images = [
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/f614cfa99228b2cc1560e7b987a8a644.jpg",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/f45076e0b3a94f1c07749ed5038ef5a4.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/a11e94ef0903644b04a1f36ed4bf4c2a.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/f282a9c8d8edb12aa083d5c0fd8730f5.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/3951837835522acc86ca85216c400c40.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/1d58d83362e6695b2946041adadab0cd.jpg",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/58f08fc03be37f7b229cd768111968db.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/day.jpg",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/1ed765a09a5a54fec87ed7a87ea0daa1.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/13753d4f587a15e9eb549f4568d40744.jpg",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/068ebcf31f64185c854b80f7bb348248.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/602a6790e5d066b0c492618693b4893d.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/e940490b7f0756a018cb122966613b62.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/932d7f0fc79ab33defe77541291813ae.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/7a03164e4d63472d067c0f82749a41f8.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/35c487df8573f8b5a0d61f284ac3c00a.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/night.jpg",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/71514e968a3d6b9b5203deedcd862672.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/31ad88f881c5dce96acb1975f3683508.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/eaf1dfb68708b4a0a8ec7375d655c674.webp",
-        "https://raw.githubusercontent.com/Alien-Et/image/main/image/66ef8edc70aae239283853e9e0cdc364.webp",
-    ];
-    const randomIndex = Math.floor(Math.random() * images.length);
-    document.body.style.backgroundImage = 'url(' + images[randomIndex] + ')';
-</script>
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/f614cfa99228b2cc1560e7b987a8a644.jpg" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/f45076e0b3a94f1c07749ed5038ef5a4.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/a11e94ef0903644b04a1f36ed4bf4c2a.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/f282a9c8d8edb12aa083d5c0fd8730f5.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/3951837835522acc86ca85216c400c40.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/1d58d83362e6695b2946041adadab0cd.jpg" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/58f08fc03be37f7b229cd768111968db.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/day.jpg" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/1ed765a09a5a54fec87ed7a87ea0daa1.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/13753d4f587a15e9eb549f4568d40744.jpg" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/068ebcf31f64185c854b80f7bb348248.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/602a6790e5d066b0c492618693b4893d.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/e940490b7f0756a018cb122966613b62.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/932d7f0fc79ab33defe77541291813ae.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/7a03164e4d63472d067c0f82749a41f8.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/35c487df8573f8b5a0d61f284ac3c00a.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/night.jpg" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/71514e968a3d6b9b5203deedcd862672.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/31ad88f881c5dce96acb1975f3683508.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/eaf1dfb68708b4a0a8ec7375d655c674.webp" alt="壁纸">
+    <img src="https://raw.githubusercontent.com/Alien-Et/image/main/image/66ef8edc70aae239283853e9e0cdc364.webp" alt="壁纸">
 </body>
 </html>
