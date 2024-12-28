@@ -12,13 +12,28 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background: black;
             background-size: cover;
             background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
             transition: background-image 1s ease-in-out;
+        }
+        .info {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <div class="info">
+        正在随机展示壁纸，刷新页面查看更多。
+    </div>
 <script>
     const images = [
         "https://raw.githubusercontent.com/Alien-Et/image/main/f614cfa99228b2cc1560e7b987a8a644.jpg",
