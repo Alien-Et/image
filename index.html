@@ -14,6 +14,7 @@
             height: 100vh;
             background-size: cover;
             background-position: center;
+            transition: background-image 1s ease-in-out;
         }
     </style>
 </head>
@@ -23,13 +24,8 @@
         "https://raw.githubusercontent.com/Alien-Et/image/main/day.jpg",
         "https://raw.githubusercontent.com/Alien-Et/image/main/night.jpg",
     ];
-    let currentIndex = 0;
-    function changeBackground() {
-        document.body.style.backgroundImage = 'url(' + images[currentIndex] + ')';
-        currentIndex = (currentIndex + 1) % images.length;
-    }
-    document.body.addEventListener('click', changeBackground);
-    changeBackground();
+    const randomIndex = Math.floor(Math.random() * images.length);
+    document.body.style.backgroundImage = 'url(' + images[randomIndex] + ')';
 </script>
 </body>
 </html>
