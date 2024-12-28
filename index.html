@@ -20,30 +20,20 @@
 </head>
 <body>
     <script>
-        const images = [
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image01.jpg',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image02.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image03.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image04.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image05.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image06.jpg',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image07.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image08.jpg',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image09.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image10.jpg',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image11.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image12.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image13.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image14.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image15.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image16.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image17.jpg',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image18.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image19.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image20.webp',
-            'https://raw.githubusercontent.com/Alien-Et/image/main/image/image21.webp',
-        ];
-        const randomImage = images[Math.floor(Math.random() * images.length)];
+        // 检测用户设备主题模式
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const mode = prefersDark ? '黑夜' : '白天';
+
+        // 不同模式的图片列表
+        const images = {
+            '白天': [
+            ],
+            '黑夜': [
+            ]
+        };
+
+        // 随机选择图片
+        const randomImage = images[mode][Math.floor(Math.random() * images[mode].length)];
         document.body.style.backgroundImage = `url('${randomImage}')`;
     </script>
 </body>
